@@ -136,4 +136,12 @@ sudo apt autoremove -y
 #sudo prime-select nvidia
 #prime-select query
 
+show_info "Would you like to delete the installation files, folders and other files used in this installation? [y,n]"
+read -n 1 answer
+if [[ $answer =~ ^[Yy]$ ]]; then    
+    sudo rm -r $DOWNLOADS_DIRECTORY && show_success "Everything deleted successful." || show_error "Error to delete some files or folders."
+else
+    show_info "Ok. The folders and files will be kept."
+fi
+
 show_header "Well Done!!! Everything was set up! :)"
