@@ -35,7 +35,7 @@ URL_PPA_WINE="https://dl.winehq.org/wine-builds/ubuntu/"
 
 #SNAP Programs
 SNAP_PROGRAMS_TO_INSTALL=(
-  youtube-music-desktop-app insomnia wps-office-multilang
+  snap-store youtube-music-desktop-app insomnia wps-office-multilang
   #vlc slack --classic spotify skype --classic photogimp
 )
 
